@@ -28,8 +28,7 @@ a
     font-size: 16px
     line-height: 20px
 .app
-  background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%), 
-  url(../img/cover-image.jpg) no-repeat top right
+  background: linear-gradient(90deg, #010202 43%, rgba(1, 2, 2, 0.2) 90.9%)
   min-height: 100vh
   color: #fff
 .film
@@ -37,16 +36,17 @@ a
   max-width: 1146px
   margin: auto
   padding: 7% 0
-  height: calc( 100vh - 152px )
 .tags
   display: flex
   align-items: flex-start
+  flex-wrap: wrap
   color: #e5e5e5 
   opacity: 0.4
   font-size: 16px
   line-height: 140%
 .tags > *
   margin-right: 15px
+  margin-bottom: 10px
 .age
   border: 1px solid #FFFFFF
   border-radius: 2px
@@ -71,4 +71,27 @@ a
   &-text 
     margin-left: 10px
     vertical-align: text-bottom
-  
+@media (max-width: 768px) 
+  .app
+    height: auto
+    padding-bottom: 400px
+    background: url('../img/cover-image.jpg') no-repeat bottom center / 300px
+  video
+    display: none
+  .film
+    padding-top: 2%
+    &-logo
+      max-width: 100%
+  .description
+    font-size: 16px
+    max-width: 333px
+@media (max-width: 576px)
+  .button-tex
+    display: none
+  .user-name
+    display: none
+  .app
+    padding-bottom: 350px
+    background-size: 300px
+  .button
+    margin-bottom: 10px
