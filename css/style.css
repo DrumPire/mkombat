@@ -100,6 +100,10 @@ a {
   margin-right: 15px;
 }
 
+.button-default {
+  display: inline-block;
+}
+
 .button-text {
   margin-left: 10px;
   vertical-align: text-bottom;
