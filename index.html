@@ -9,9 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/jquery.vide.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -37,11 +39,19 @@
         сильнейший
       </p>
       <div class="button-group">
-        <button class="button button-primary">Предзаказ фильма</button>
-        <a href="https://www.youtube.com/watch?v=V2LT1qwofzc" class="button button-default" target="_blank">
+        <a data-fancybox data-src="#hidden-content" href="javascript:;" class="button button-primary" id="trueModal">Предзаказ фильма</a>
+        <a data-fancybox href="https://www.youtube.com/watch?v=V2LT1qwofzc" class="button button-default">
           <img src="img/play.svg" alt="icon: Play" class="button-icon">
           <span class="button-text">Смотреть трейлер</span>
         </a>
+      </div>
+      <div style="display: none;" id="hidden-content">
+        <h2>Привет</h2>
+        <form action="#" class="form">
+          <input type="text" class="input" placeholder="Введите ваш Email">
+          <button class="button button-primary">Подписатся</button>
+        </form>
+        <p>Приятного просмотра</p>
       </div>
     </section>
   </div>

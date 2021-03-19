@@ -96,6 +96,7 @@ a {
 }
 
 .button-primary {
+  display: inline-block;
   background: #EA6E20;
   margin-right: 15px;
 }
@@ -107,6 +108,15 @@ a {
 .button-text {
   margin-left: 10px;
   vertical-align: text-bottom;
+}
+
+.input {
+  padding: 9px 26px;
+  border-radius: 6px;
+  border-color: #EA6E20;
+  outline: none;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 @media (max-width: 768px) {
